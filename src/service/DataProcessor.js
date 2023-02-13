@@ -2,11 +2,9 @@ import { weatherConfig } from "./weather-config.js";
 
 export class DataProcessor {
     #url;
-
     constructor(url) {
         this.#url = url;
     }
-
     async getData(latitude, longitude) {
         const responseFromServes =
             await fetch(`${this.#url}&latitude=${latitude}&longitude=${longitude}`);
