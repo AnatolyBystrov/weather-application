@@ -1,4 +1,4 @@
-import { weatherConfig } from "./weather-config.js";
+import { weatherConfig } from "./weatherConfig";
 
 export class DataProcessor {
     #url;
@@ -13,7 +13,7 @@ export class DataProcessor {
 
     async getTemperatureData(city, startDate, endDate) {
         const latitudeOfCity = weatherConfig.cities[city].latitude;
-        const longitudeofCity = weatherConfig.cities[city].longitude;
+        const longitude =weatherConfig.cities[city].longitude;
         const responseFromServes =
             await fetch(`${this.#url}&latitude=${latitudeOfCity}&longitude=${longitudeofCity}&start_date=${startDate}
 &end_date=${endDate}`);
