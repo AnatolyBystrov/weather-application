@@ -16,7 +16,7 @@ export class DataProcessor {
         const longitude =weatherConfig.cities[city].longitude;
         const responseFromServes =
             await fetch(`${this.#url}&latitude=${latitudeOfCity}&longitude=${longitude}&start_date=${startDate}
-&end_date=${endDate}`);
+            &end_date=${endDate}`);
         return responseFromServes.json();
     }
 

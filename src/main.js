@@ -9,5 +9,5 @@ import { DataForm } from "./ui/data-form.js";
 //     const data = await dataProcessor.createWeatherObject("Jerusalem","2023-02-15","2023-02-16",21,22)
 // }
 // displayTemperatures();
-const dataForm = new DataForm("form-section",7);
+const dataForm = new DataForm("form-section",16);
 
