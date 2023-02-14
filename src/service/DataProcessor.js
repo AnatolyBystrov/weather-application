@@ -1,4 +1,4 @@
-import { weatherConfig } from "./weatherConfig";
+import { weatherConfig } from "./weatherConfig.js";
 
 export class DataProcessor {
     #url;
@@ -15,7 +15,7 @@ export class DataProcessor {
         const latitudeOfCity = weatherConfig.cities[city].latitude;
         const longitude =weatherConfig.cities[city].longitude;
         const responseFromServes =
-            await fetch(`${this.#url}&latitude=${latitudeOfCity}&longitude=${longitudeofCity}&start_date=${startDate}
+            await fetch(`${this.#url}&latitude=${latitudeOfCity}&longitude=${longitude}&start_date=${startDate}
 &end_date=${endDate}`);
         return responseFromServes.json();
     }
