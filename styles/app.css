@@ -1,0 +1,73 @@
+body
+{
+    background: url(/picture/pngtree-blue-sky-weather-background-picture-image_1229451.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#header
+{
+    font-size: 280%;
+    justify-content: center; 
+    display: flex;
+    color: blue;
+}
+#table
+{
+    display: none;
+    justify-content: center;  
+}
+.input_city,.input_days,.input_hours,.input_buttons
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.submit, .reset, .updating-forecast-table
+{
+    font-size: 110%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.form-select-from-hour,.form-select-to-hour, #select_start_day, #sel-city, #select_finish_day
+{
+    font-size: 200%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#select-from-hour, #select-to-hour, .select-city
+{
+    font-size: 50%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.table-style
+{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    text-align: center;
+    outline: 2px solid #000;
+}
+.select-city
+{
+    font-size: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.table-logo
+{
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: blue;
+}
+.general-table
+{
+    justify-content: center;
+    margin: auto;
+}
